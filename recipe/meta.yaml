@@ -1,5 +1,5 @@
 {% set name = "healpix" %}
-{% set version = "2024.1" %}
+{% set version = "2024.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/healpix-{{ version }}.tar.gz
-  sha256: 3462c187206aad701f90f1a7e0e81cabd96974034d9e2befdc1c26721267a777
+  sha256: dc908dd39080a088476bfc451b6dcfe9ad015851473b8d97177bf698e4748ae3
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
