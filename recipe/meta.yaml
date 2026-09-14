@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/healpix-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/healpix-{{ version }}.tar.gz
   sha256: 733f16f30c15d911c8209f4045f0b0934e5fcafa63b8b39d62e425a036adccea
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 3
 
 requirements:
   build:
